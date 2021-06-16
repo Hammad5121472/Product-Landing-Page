@@ -1,0 +1,220 @@
+*{
+
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+
+/*Header Styling*/
+#header{
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px 15px;
+    background-color:#ddd;
+    position: fixed;
+    top:0;
+    right:0;
+    left: 0;
+}
+
+#header-img{
+    display: flex;
+    width: 25%;
+}
+
+
+/*Navbar styling*/
+
+#nav-bar{
+    display: flex;
+    flex-grow: 1;
+    min-height: 80px;
+    align-items: center;
+}
+#nav-bar ul{
+    text-align: center;
+    padding: 0;
+}
+
+#nav-bar ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+#nav-bar ul li .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding:0px 30px 0px 30px;
+}
+
+/*Form Styling*/
+.form{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 430px;
+    width: 100%;
+}
+
+.form form input{
+    display:block;
+}
+
+.form form input[type="email"]{
+    color: black;
+    padding: 4px 20px;
+    font-weight:500;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.form form input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 4px 20px;
+    font-weight:500;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Features Styling*/
+#Features {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  i{
+    font-size: 50px; 
+    text-align: center;
+    margin-top: 10%;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+p{
+    font-size: 20px;
+    text-align: center; 
+}
+
+
+/*How It Works Styling*/
+
+#HowItWorks{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/*Pricing styling*/
+#Pricing{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#Pricing .card{
+    margin: 0 auto;
+    margin-top: 30px;
+    border:1px solid black;
+    max-width: 350px;
+    width:100%;
+    border-radius:5px;
+    text-align: center;
+}
+
+#Pricing .card h2{
+    background-color:lightgray;
+    color: black;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 10px 0px;
+}
+
+#Pricing .card strong{
+    font-size: 30px;
+}
+
+#Pricing .card p{
+    font-size: 20px;
+}
+
+#Pricing .card button{
+    background-color: rgba(221, 221, 21, 0.719);
+    color: black;
+    font-size: 20px;
+    margin-bottom:20px;
+    padding:5px 20px 5px 20px;
+    font-weight:500;
+    cursor: pointer;
+}
+
+/*Footer Styling*/
+
+footer{
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+
+footer  ul{
+    padding: 0;
+}
+
+footer  ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+footer p{
+    color: black;
+    font-size: 16px;
+}
+
+/*Medias*/
+
+@media(max-width:800px){
+
+    #Pricing{
+        flex-direction: column;
+        align-self: center;
+    }
+}
